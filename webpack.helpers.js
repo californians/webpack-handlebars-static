@@ -1,4 +1,5 @@
 const handlebarsLayouts = require('handlebars-layouts');
+const {handlebarsCompareHelper} = require('./src/lib/handlebars-compare-helper');
 
 const handlebarsContext = {};
 function _handlebarsEqualHelper(name, value, options) {
@@ -13,6 +14,7 @@ function _handlebarsVariablesHelper(name, options) {
 function registerHandlersHelpers(Handlebars) {
   Handlebars.registerHelper('equal', _handlebarsEqualHelper);
   Handlebars.registerHelper('set', _handlebarsVariablesHelper);
+  Handlebars.registerHelper('compare', handlebarsCompareHelper);
   handlebarsLayouts.register(Handlebars);
 }
 
