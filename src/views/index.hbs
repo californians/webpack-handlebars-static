@@ -1,8 +1,25 @@
-{{#extend "html/template"}}
+{{#extend "html/template" bodyId="page-home"}}
   {{#content "body"}}
-    <main role="main">
-      {{> partials/header }}
-      <h1>{{site.title}}</h1>
-    </main>
+
+    {{> partials/hero-2 }}
+
+
+    {{> partials/section id="intro" sectionPartial="partials/section-intro"}}
+
+    {{> partials/section id="benefits-business" sectionPartial="partials/section-benefits-business"}}
+
+    {{> partials/section id="benefits-developers" sectionPartial="partials/section-benefits-developers"}}
+
+    {{> partials/section id="scope" sectionPartial="partials/section-scope"}}
+
+    {{> partials/section id="project-types" sectionPartial="partials/section-project-types"}}
+
+    {{> partials/section id="bio" sectionPartial="partials/section-bio"}}
+
+    {{> partials/section id="testimonials" sectionPartial="partials/section-testimonials"}}
+
+
+    {{> partials/footer }}
+
   {{/content}}
 {{/extend}}

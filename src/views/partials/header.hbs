@@ -1,3 +1,22 @@
-<header>
-  Header
+<header class="fixed-top">
+
+  <nav class="navbar navbar-expand-md navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand mr-md-4" href="/">{{site.firma}}</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topNavbar" aria-controls="topNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="topNavbar">
+        <ul class="navbar-nav ml-auto">
+          {{#topnav}}
+            <li class="nav-item {{#compare path "===" ../activePage}}active{{/compare}}">
+              <a class="nav-link" href="{{path}}">{{label}}{{#compare path "===" ../activePage}} <span class="sr-only">(current)</span>{{/compare}}</a>
+            </li>
+          {{/topnav}}
+        </ul>
+      </div>
+    </div>
+  </nav>
+
 </header>

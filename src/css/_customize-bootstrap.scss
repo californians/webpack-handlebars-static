@@ -1,0 +1,56 @@
+// FUNCTIONS
+@function theme-color-level-MG($color, $level: 0) {
+  $color-base: if($level > 0, $black, $white);
+  $level: abs($level);
+
+  @return mix($color-base, $color, $level * $theme-color-interval);
+}
+
+// $main-nav-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$color-brown-1}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
+//
+//
+// // ELEMENTS
+// a {
+//   color: $color-brand;
+//
+//   &:hover {
+//     color: #ffad05;
+//   }
+// }
+
+button,
+.btn {
+  &:focus,
+  &:active {
+    outline: none !important;
+    box-shadow: none;
+  }
+
+  &:hover {
+    // border-color: orange;
+  }
+}
+
+
+// // CLASSES
+// .bg-primary,
+// .btn-primary {
+//   background-color: $color-brand !important;
+// }
+//
+// .btn-primary {
+//   border-color: $color-brand;
+// }
+//
+// .navbar {
+//   .navbar-toggler {
+//     border-color: $color-brown-1;
+//   }
+//
+//   .navbar-toggler-icon {
+//     background-image: $main-nav-toggler-icon-bg;
+//   }
+// }
+//
+// // TABLES
+// @include table-row-variant("branded", theme-color-level-MG($color-brand, -2), theme-color-level-MG($color-brand, $table-border-level));

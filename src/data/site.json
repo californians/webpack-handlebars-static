@@ -1,3 +1,9 @@
 {
-  "title": "Site Title"
+	"title": "App Architecture Studio",
+	"firma": "App Architecture Studio",
+  "description": "Cretae architecture of online systems, blockchain and mobile apps.",
+  "oneline": "Cretae architecture of online systems, blockchain and mobile apps from idea to tech specs.",
+  "lang": "en",
+  "locale": "en_US",
+  "URL": "http://apparchitecture.studio/"
 }

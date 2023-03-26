@@ -1,0 +1,20 @@
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  .section-title {
+    text-align: center;
+
+    h2 {
+      text-transform: uppercase;
+
+      &::after {
+        content: '';
+        display: block;
+        border-top: 2px solid orange;
+        width: 50px;
+        margin: 20px auto 40px;
+      }
+    }
+  }
+}

@@ -1,5 +1,31 @@
-$bg: #f0f0f0;
+@import "../../node_modules/bootstrap/scss/_functions";
+@import 'functions';
+@import "../../node_modules/bootstrap/scss/_variables";
+@import 'variables';
+@import "../../node_modules/bootstrap/scss/_mixins";
+@import "mixins";
 
-body {
-  background-color: $bg;
-}
+
+@import 'customize-bootstrap';
+
+// TAGS
+@import 'tags/section';
+
+
+// CLASSES
+@import 'components/footer';
+@import 'components/header';
+@import 'components/hero';
+@import 'components/jumbotron';
+@import 'components/testimonials';
+
+
+@import 'global';
+
+// IDs
+@import 'id/bio';
+
+
+// SECTIONS
+@import 'sections/section-intro';
+@import 'sections/section-bio';
