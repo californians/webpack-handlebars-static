@@ -1,0 +1,37 @@
+body {
+	// background-color: $color-bg;
+	// padding-top: 56px;
+}
+
+// https://stackoverflow.com/questions/24658365/img-tag-displays-wrong-orientation
+img {
+  image-orientation: from-image;
+}
+
+
+ul {
+  list-style-type: disc;
+}
+
+p + ul {
+  margin-top: -1rem;
+  padding-left: 1.5rem;
+}
+
+header {
+  background: $indigo-800;
+  color: #fff;
+}
+
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+footer {
+  background: $gray-900;
+
+  small {
+    font-size: 12px;
+  }
+}

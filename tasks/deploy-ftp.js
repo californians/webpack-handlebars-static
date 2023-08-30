@@ -4,10 +4,9 @@ const path = require('path')
 // const fse = require('fs-extra')
 
 const config = require('../webpack.config')
-const privateConfig = require('../private-config')
+const secretConfig = require('../secret-config')
 
-const distDir = config.output.path
-const cname = 'http://brandidentity.valexiev.com/'
+const localDir = config.output.path
 
 
 // * * * Additional files * * *
@@ -15,34 +14,37 @@ const cname = 'http://brandidentity.valexiev.com/'
 // const phpDir = path.resolve(__dirname, '../additional')
 //
 // try {
-//   fse.copySync(phpDir, distDir)
+//   fse.copySync(phpDir, localDir)
 //   console.log('Copied the files in /additional to /dist!')
 // } catch (err) {
 //   console.error(err)
 // }
 
 
+console.log(secretConfig)
+console.log(localDir)
+
 // * * * FTP * * *
 
 var ftpDeploy = new FtpDeploy()
 
-const ftpDeployConfig = {
-  ...privateConfig.ftpDeployConfig,
-  localRoot: distDir,
-  remoteRoot: '/',
+const ftpConfig = {
+  ...secretConfig.ftpConfig,
+  localRoot: localDir,
+  remoteRoot: '/public-systemarchitecture-studio',
   include: ["*", "**/*"]
   // exclude: ['.git', '.idea', 'tmp/*', 'build/*']
 }
 
 
-ftpDeploy.deploy(ftpDeployConfig, function(err) {
+ftpDeploy.deploy(ftpConfig, function(err) {
   if (err) {
     console.log(err)
   } else {
     console.log('Successful Deploy!')
     console.log('\n\n')
     console.log('OPEN:')
-    console.log(cname)
+    console.log('https://systemarchitecture.studio')
     console.log('\n\n')
     console.log(': )')
     console.log('\n\n\n\n')

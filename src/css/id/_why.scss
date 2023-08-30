@@ -1,0 +1,19 @@
+#why {
+  background: #fff;
+
+  h1, h2 {
+
+    span {
+      display: block;
+      margin-top: 10px;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      border-top: 2px solid orange;
+      width: 60px;
+      margin: 20px auto 40px;
+    }
+  }
+}

@@ -9,23 +9,30 @@
 @import 'customize-bootstrap';
 
 // TAGS
-@import 'tags/section';
+@import 'tags';
 
 
 // CLASSES
-@import 'components/footer';
-@import 'components/header';
-@import 'components/hero';
-@import 'components/jumbotron';
-@import 'components/testimonials';
+@import 'classes';
+
+// @import 'components/footer';
+// @import 'components/header';
+// @import 'components/hero';
+// @import 'components/jumbotron';
+@import 'components/features';
 
 
 @import 'global';
 
 // IDs
-@import 'id/bio';
+@import 'id/index';
+// @import 'id/bio';
+@import 'id/why';
+@import 'id/what';
+@import 'id/contact-form';
 
 
 // SECTIONS
-@import 'sections/section-intro';
-@import 'sections/section-bio';
+// @import 'sections/section-intro';
+@import 'sections/index';
+@import 'sections/testimonials';

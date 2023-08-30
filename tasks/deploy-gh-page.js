@@ -1,7 +1,7 @@
 const fs = require('fs')
 const ghpages = require('gh-pages')
 const config = require('../webpack.config')
-const privateConfig = require('../private-config')
+const privateConfig = require('../secret-config')
 
 const distDir = config.output.path
 const cname = 'maistorgrei.com'

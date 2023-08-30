@@ -1,0 +1,28 @@
+{{#extend "html/template" bodyId="page-home"}}
+  {{#content "body"}}
+
+    {{> sections/header }}
+
+    {{> templates/section id="why" sectionPartial="sections/archive/why-2"}}
+    {{> templates/section id="why" sectionPartial="sections/archive/why-1"}}
+
+    {{> templates/section id="how" sectionPartial="sections/how-2"}}
+
+    {{> templates/section id="who-am-i" sectionPartial="sections/about-2"}}
+
+    {{> templates/section id="testimonials" sectionPartial="sections/testimonials"}}
+
+    {{> templates/section id="what" sectionPartial="sections/what-2"}}
+    {{> templates/section id="systemTypes" sectionPartial="sections/types-of-systems"}}
+
+    {{> templates/section id="target" sectionPartial="sections/target-2"}}
+
+    {{> templates/section id="conditions" sectionPartial="sections/conditions"}}
+
+    {{> templates/section id="call" sectionPartial="sections/call"}}
+
+
+    {{> sections/footer }}
+
+  {{/content}}
+{{/extend}}

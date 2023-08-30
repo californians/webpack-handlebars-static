@@ -2,6 +2,7 @@ const handlebarsLayouts = require('handlebars-layouts');
 const {handlebarsCompareHelper} = require('./src/lib/handlebars-compare-helper');
 
 const handlebarsContext = {};
+
 function _handlebarsEqualHelper(name, value, options) {
   return handlebarsContext[name] === value ? options.fn(this) : options.inverse(this);
 }

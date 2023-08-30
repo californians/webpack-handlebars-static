@@ -41,11 +41,12 @@ module.exports = {
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
-            options: {
-              hmr: !isProd,
-            },
+            options: { hmr: !isProd },
           },
-          { loader: 'css-loader', options: { importLoaders: 1 } },
+          {
+            loader: 'css-loader',
+            options: { importLoaders: 1 }
+          },
           isProd
             ? {
                 loader: 'postcss-loader',
@@ -97,7 +98,12 @@ module.exports = {
       data: path.join(sourceDir, 'data', '*.json'),
       partials: [
         path.join(templateDir, 'template.hbs'),
+        path.join(sourceDir, 'views', 'sections', '*.hbs'),
+        path.join(sourceDir, 'views', 'templates', '*.hbs'),
+        path.join(sourceDir, 'views', 'content', '*.hbs'),
         path.join(sourceDir, 'views', 'partials', '*.hbs'),
+        path.join(sourceDir, 'views', 'infra', '*.hbs'),
+        path.join(sourceDir, 'views', 'mockups', '*.hbs'),
       ],
       onBeforeSetup: (Handlebars) => {
         return registerHandlersHelpers(Handlebars);

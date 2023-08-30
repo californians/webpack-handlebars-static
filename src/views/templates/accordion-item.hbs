@@ -1,0 +1,8 @@
+<div class="accordion-item">
+  <h3 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{itemId}}">{{{title}}}</button>
+  </h3>
+  <div id="{{itemId}}" class="accordion-collapse collapse {{#if show}}show{{/if}}" {{#if accordionId}}data-bs-parent="#{{accordionId}}"{{/if}}>
+    <div class="accordion-body">{{> (lookup . 'accordionContent') }}</div>
+  </div>
+</div>

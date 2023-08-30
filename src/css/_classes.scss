@@ -1,0 +1,36 @@
+.container-fluid {
+  // max-width: $width-page;
+}
+
+
+.section-title {
+  text-align: center;
+
+  h2 {
+    font-size: 2.5rem;
+
+    span {
+      font-size: 2.1rem;
+      font-weight: 400;
+
+      &::before {
+        content: ' ';
+        display: block;
+      }
+    }
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    border-top: 2px solid orange;
+    width: 50px;
+    margin: 20px auto 40px;
+  }
+}
+
+
+.target-icon {
+  width: 4rem;
+  height: 4rem;
+}

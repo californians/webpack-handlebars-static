@@ -1,0 +1,163 @@
+header,
+#section-why,
+#section-how,
+#section-who-am-i,
+#section-services,
+#section-target,
+#section-conditions {
+  .container-fluid {
+    max-width: $width-page;
+  }
+}
+
+#section-why,
+#section-how {
+  background: $yellow-100;
+}
+
+
+#section-who-am-i {
+  background: $gray-200;
+
+  .container-fluid {
+    max-width: 1000px;
+  }
+
+  em {
+    text-decoration: underline;
+    font-style: normal;
+  }
+
+  img {
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+    display: block;
+
+    @include media-breakpoint-up(md) {
+      float: right;
+      max-width: 50%;
+      margin-left: 40px;
+    }
+  }
+
+  h3 {
+    text-decoration: underline;
+
+    span {
+      font-weight: 400;
+      font-style: italic;
+    }
+  }
+}
+
+
+#section-services {
+  background: #fff;
+
+  .accordion {
+
+    & + .accordion {
+      margin-top: 10px;
+    }
+
+    .accordion-button {
+      font-weight: bold;
+      font-size: 1.3rem;
+      background: $gray-200;
+    }
+  }
+  #accordion-donts {
+    .accordion-item {
+      border-color: $gray-200;
+    }
+    .accordion-button {
+      font-weight: normal;
+      font-size: 1rem;
+      background: $gray-100;
+      margin: 10px inherit;
+    }
+
+    p {
+      font-style: normal;
+      text-decoration: underline;
+      padding-bottom: 7px;
+    }
+  }
+
+  & .accordion-body > ol {
+    counter-reset: list;
+
+    & > li {
+      margin-bottom: 20px;
+
+      ol li {
+        list-style: none;
+        position: relative;
+
+        &:before {
+          content: counter(list) ")";
+          counter-increment: list;
+          left: -40px;
+          padding-right: 7px;
+          position: absolute;
+          text-align: right;
+          width: 40px;
+        }
+      }
+    }
+  }
+}
+
+.service-title {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+
+
+#section-target {
+  background: $gray-200;
+}
+
+
+#section-conditions {
+
+  .row {
+    max-width: 840px;
+  }
+
+  .col {
+    max-width: 400px;
+  }
+
+  .card {
+    border-color: $indigo-200;
+  }
+
+  .card-header {
+    background: $indigo-200;
+  }
+
+  .col:last-child {
+    .card {
+      border-color: $indigo-400;
+    }
+
+    .card-header {
+      background: $indigo-400;
+      color: #fff;
+    }
+  }
+}
+
+
+#section-call {
+  background: $gray-200;
+
+  .container-fluid {
+    // max-width: calc($width-narrow / 1.5 );
+    max-width: 450px;
+  }
+}

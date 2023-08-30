@@ -1,22 +1,3 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
-
-body {
-	background-color: $color-bg;
-	// padding-top: 56px;
-}
-
-// https://stackoverflow.com/questions/24658365/img-tag-displays-wrong-orientation
-img {
-  image-orientation: from-image;
-}
-
-.container-fluid {
-  max-width: $width-page;
-}
-
-p + ul {
-  margin-top: -1rem;
-  padding-left: 1.5rem;
-}

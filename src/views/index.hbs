@@ -1,25 +1,24 @@
 {{#extend "html/template" bodyId="page-home"}}
   {{#content "body"}}
 
-    {{> partials/hero-2 }}
+    {{> sections/header-3 }}
+
+    {{> templates/section id="why" sectionPartial="sections/why-3"}}
+
+    {{> templates/section id="how" sectionPartial="sections/benefits-how-5"}}
+
+    {{> templates/section id="who-am-i" sectionPartial="sections/about-4"}}
+
+    {{> templates/section id="services" sectionPartial="sections/services-what-3"}}
+
+    {{> templates/section id="target" sectionPartial="sections/target-3"}}
+
+    {{> templates/section id="conditions" sectionPartial="sections/conditions-3"}}
+
+    {{> templates/section id="call" sectionPartial="sections/call-A"}}
 
 
-    {{> partials/section id="intro" sectionPartial="partials/section-intro"}}
-
-    {{> partials/section id="benefits-business" sectionPartial="partials/section-benefits-business"}}
-
-    {{> partials/section id="benefits-developers" sectionPartial="partials/section-benefits-developers"}}
-
-    {{> partials/section id="scope" sectionPartial="partials/section-scope"}}
-
-    {{> partials/section id="project-types" sectionPartial="partials/section-project-types"}}
-
-    {{> partials/section id="bio" sectionPartial="partials/section-bio"}}
-
-    {{> partials/section id="testimonials" sectionPartial="partials/section-testimonials"}}
-
-
-    {{> partials/footer }}
+    {{> sections/footer }}
 
   {{/content}}
 {{/extend}}

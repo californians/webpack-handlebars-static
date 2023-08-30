@@ -1,0 +1,25 @@
+{{#extend "html/template" bodyId="page-home"}}
+  {{#content "body"}}
+
+    {{> mockups/hero-title }}
+
+
+    {{> templates/section id="intro" sectionPartial="mockups/section-intro"}}
+
+    {{> templates/section id="benefits-business" sectionPartial="mockups/section-benefits-business"}}
+
+    {{> templates/section id="benefits-developers" sectionPartial="mockups/section-benefits-developers"}}
+
+    {{> templates/section id="scope" sectionPartial="mockups/section-scope"}}
+
+    {{> templates/section id="project-types" sectionPartial="mockups/section-project-types"}}
+
+    {{> templates/section id="bio" sectionPartial="mockups/section-bio"}}
+
+    {{> templates/section id="testimonials" sectionPartial="sections/testimonials"}}
+
+
+    {{> sections/footer }}
+
+  {{/content}}
+{{/extend}}
